@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Table Exercise</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 30px auto;
+        font-family: Arial, sans-serif;
+      }
+      th,
+      td {
+        border: 1px solid #888;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #f3f3f3;
+      }
+      tr:nth-child(even) {
+        background-color: #fafafa;
+      }
+      button {
+        padding: 6px 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Web Development Course Schedule</h2>
+
+    <table>
+      <tr>
+        <th rowspan="2">Day</th>
+        <th colspan="2">Morning Session</th>
+        <th colspan="2">Afternoon Session</th>
+        <th rowspan="2">Action</th>
+      </tr>
+      <tr>
+        <th>Topic</th>
+        <th>Instructor</th>
+        <th>Topic</th>
+        <th>Instructor</th>
+      </tr>
+
+      <tr>
+        <td>Monday</td>
+        <td>HTML Basics</td>
+        <td><a href="https://example.com/john" target="_blank">John Doe</a></td>
+        <td>CSS Introduction</td>
+        <td>
+          <a href="https://example.com/jane" target="_blank">Jane Smith</a>
+        </td>
+        <td><button>Join Class</button></td>
+      </tr>
+
+      <tr>
+        <td>Tuesday</td>
+        <td rowspan="2">CSS Flexbox & Grid</td>
+        <td rowspan="2">
+          <a href="https://example.com/sam" target="_blank">Sam Lee</a>
+        </td>
+        <td>Responsive Design</td>
+        <td>
+          <a href="https://example.com/lisa" target="_blank">Lisa Brown</a>
+        </td>
+        <td><button>Join Class</button></td>
+      </tr>
+
+      <tr>
+        <td>Wednesday</td>
+        <td colspan="2">Mini Project Work</td>
+        <td><button>View Tasks</button></td>
+      </tr>
+
+      <tr>
+        <td>Thursday</td>
+        <td>JavaScript Basics</td>
+        <td>
+          <a href="https://example.com/mike" target="_blank">Mike Chen</a>
+        </td>
+        <td rowspan="2" colspan="2">Team Project (HTML + CSS + JS)</td>
+        <td rowspan="2"><button>Submit Work</button></td>
+      </tr>
+
+      <tr>
+        <td>Friday</td>
+        <td>DOM Manipulation</td>
+        <td>
+          <a href="https://example.com/anna" target="_blank">Anna Davis</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="6" style="text-align: center; background-color: #f0f0f0">
+          <strong>Note:</strong> All sessions start at 9:00 AM and end at 4:00
+          PM.
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
