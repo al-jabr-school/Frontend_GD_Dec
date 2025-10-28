@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form onsubmit="return false;">
+      <h2>Add your payment details</h2>
+
+      <div class="form-input">
+        <label for="ism">Name on Card</label>
+        <input type="text" id="ism" placeholder="James Bond" />
+      </div>
+
+      <div class="form-input">
+        <label for="karta">Card Number</label>
+        <input type="number" id="karta" placeholder="0000 0000 0000 0000" />
+      </div>
+
+      <div class="form-group">
+        <div class="form-input">
+          <label for="sana">Expiry Date</label>
+          <input type="text" id="sana" placeholder="05/19" />
+        </div>
+
+        <div class="form-input">
+          <label for="kod">Security Code</label>
+          <input type="number" id="kod" placeholder="***" />
+        </div>
+
+        <div class="form-input">
+          <label for="zip">Zip Code (USA only)</label>
+          <input type="number" id="zip" placeholder="1020" />
+        </div>
+      </div>
+
+      <p>Your credit card will be billed today for $12.</p>
+
+      <button type="submit">Complete yearly subscription payment</button>
+    </form>
+  </body>
+</html>
